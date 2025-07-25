@@ -12,6 +12,9 @@
 .orange{
     color: rgba(233, 90, 8, 1);
 }
+.black-color{
+    color: rgba(0, 0, 0, 0.5);
+}
 header{
     margin-bottom: 120px;
 }
@@ -91,7 +94,140 @@ header{
     height: 355px;
 }
 
+/* our-plants-part */
+.our-plants{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    width: 100%;
+}
+.our-plants-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.our-plants-description{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 49px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.card{
+    max-width: 270px;
+    height: auto;
+    width: 100%;
+}
+.card-image{
+    max-width: 100%;
+    height: auto;
+}
+.flower-name{
+    font-family:'Segoe UI';
+    font-size: medium;
+    color: rgba(17, 17, 17, 1);
+    margin-bottom: 0;
+    text-align: center;
+}
+.flower-price{
+    font-weight: 700;
+    margin-top: 3px;
+    text-align: center;
+}
+.cart-btn{
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    padding: 19px 80px;
+    border-style: none;
+    width: 100%;
+}
+/* plants-lover */
+/* .plants-lover{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+.plants-lover-img{
+    max-width: 540px;
+    height: 597px;
+    width: 100%;
+}
+.plants-lover-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.list{
+    margin-bottom: 20px;
+}
+.trusted-badge{
+    width: 286px;
+    margin:0px;
+    transform: translateX(-220px) translateY(-40px);
+} */
 
+
+/* latest-deal-part */
+.latest-deal{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.latest-deal-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.latest-deal-description{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* .deal-part */
+
+
+/* newsletter-part */
+.newsletter{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    height: 533px;
+    background-image: url('../assets/news-letter-bg.png');
+    background-color: rgba(7, 51, 79, 0.4);
+}
+.primary-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: white;
+    padding: 16px;
+    margin-top: 199px;
+}
+.email{
+    width: 644px;
+    height: 50px;
+    max-width: 100%;
+}
+.newsletter-btn{
+    font-weight: 600;
+    color: white;
+    background-color: rgba(233, 90, 8, 1);
+    padding: 19px 53.5px;
+    border-style: none;
+    transform: translateX(-5px);
+}
 
 /* media-query-mobile */
 @media screen and (max-width: 576px) {
@@ -109,4 +245,25 @@ header{
     .hero-flower{
         flex-direction: column-reverse;
     }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cart-btn{
+        width: 100%;
+        padding: 19px 30px;
+    }
+    .newsletter{
+        width: 100%;
+        height: auto;
+    }
+    .newsletter-title{
+        margin-top: 30px;
+    }
+    .email{
+        width: 50%;
+    }
+    .newsletter-btn{
+        transform: translateX(0px);
+    }
+    
 }
