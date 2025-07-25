@@ -171,8 +171,34 @@ header{
     margin:0px;
     transform: translateX(-220px) translateY(-40px);
 } */
-
-
+.plants-lover{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+    
+}
+.plats-lover-picture{
+    display: flex;
+    width: 540px;
+}
+.plants-lover-img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.trusted-badge{
+    width: 266px;
+    height: 266px;
+    margin: 0px;
+    transform: translateX(-180px) translateY(-120px);
+}
+.plants-lover-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
 /* latest-deal-part */
 .latest-deal{
     max-width: 1440px;
@@ -274,10 +300,30 @@ header{
         margin-top: 30px;
     }
     .email{
-        width: 50%;
+        width: 208px;
+        height: 50px;
+        margin: 15px 20px;
+        
     }
     .newsletter-btn{
-        transform: translateX(0px);
+        width: 108px;
+        height: 50px;
+        padding: 10px 3px;
+        
+        /* transform: translateX(0px); */
+    }
+    .plants-lover{
+        flex-direction: column;
+    }
+    .plats-lover-picture{
+        max-width:100%;
+    }
+    .plants-lover-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .trusted-badge{
+        display: none;
     }
     .footer{
         flex-direction: column;
